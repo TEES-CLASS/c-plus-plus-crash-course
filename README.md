@@ -7,7 +7,9 @@ Students at CLASS always end up requiring to learn C++. This here is a basic sho
  2. [A simple "Hello World!" program](chapters/c2_hello_world.md)
  3. [How c++ works](chapters/c3_how_c%2B%2B_works.md)
  4. [Variables](chapters/c4_variables.md)
- 5. Work in progress
+ 5. [Simple mathematics](chapters/c5_simple_mathematics.md)
+ 6. Functions
+ 6. Work in progress
 
 For more in-depth learning I would refer people to the youtube channel [The Cherno](https://www.youtube.com/c/TheChernoProject), specifically his [c++ series](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb). The list of crucial videos to watch are:
  1.  [How c++ works](https://www.youtube.com/watch?v=SfGuIVzE_Os&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=5)
