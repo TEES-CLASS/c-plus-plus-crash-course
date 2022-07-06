@@ -58,6 +58,9 @@ When this program is linked together and executed, the operating system furnishe
 ### What does ```std::cout << ``` do?
 This is a call to the output stream with the output streaming operator (`<<`). What this means is that we are streaming everything past the `<<`-operator to `stdout` (the terminal output). In this particular case we streamed the text `"Hello World!\n"` to the terminal. The `\n` character at the end was an ASCII line-feed character.
 
+### What does the `std::` mean?
+In general the double colon `::` is called the scope resolution operator. In this case the `cout` functionality is contained within the `std` namespace and therefore `std::cout` means that we are using `cout` in the scope of the namespace `std`.
+
 ### What about the ```return 0;``` business?
 Since the function is defined with an `int` return type we need to terminate this function with a return value of that type. This is achieved with the `return` statement.  
 If a function has any return type other than `void` then it mush be terminated with a return-call.
