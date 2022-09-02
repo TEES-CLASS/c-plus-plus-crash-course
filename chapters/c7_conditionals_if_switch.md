@@ -127,7 +127,106 @@ if (a >= 0.0 and a < 1.0)
 
 //Other code  
 ```
-Here `b` is `1.0` only if `a` is greater or equal to `0.0` and smaller than `1.0`.
+Here `b` is `1.0` only if `a` is greater or equal to `0.0` and smaller than `1.0`.  
 ↓  
 ↓  
+
+
 ## 7.4 The `switch` statement
+The basic syntax for a `switch` construct is
+```c++
+switch(expression) 
+{
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+The `switch` evaluates the expression and then jumps to a `labeled statement`
+that matches the evaluated value of the expression. Because the switch body uses 
+labeled statements one has to use the `break` jump-statement to prevent the 
+statements, that follow a labeled statement, from executing. For example,
+```c++
+#include <iostream>
+
+int main() 
+{
+    int a=0, b=12;
+    
+    switch (b)
+    {
+        case 11: a = 1;
+        case 12: a = 2;
+        case 13: a = 3;
+        default: a = 4;
+    }
+    printf("a=%d\n",a);
+    
+    return 0;
+}
+```
+Output:
+```
+a=4
+```
+The code above outputs `a=4` regardless of the value of `b`. In order for the 
+`switch` to perform uniquely for specific values of `b`, i.e., 11, 12 or 13, we 
+need to add `break` jump-statement like this
+```c++
+#include <iostream>
+
+int main() 
+{
+    int a=0, b=12;
+    
+    switch (b)
+    {
+        case 11: a = 1; break;
+        case 12: a = 2; break;
+        case 13: a = 3; break;
+        default: a = 4;
+    }
+    printf("%d\n",a);
+    
+    return 0;
+}
+```
+Output:
+```
+a=2
+```
+The `switch` statement here will assign a unique value for `a` if `b` is 11, 12 
+or 13 and `a=4` otherwise.  
+↓    
+↓    
+
+## Concluding remark on `switch`
+
+The `switch` construct can be replecated by a combination of `if` constructs.
+So where would one use a switch? The quick answer is: to reduce the evaluation 
+of expressions. For example the program above coded with `if` constructs would 
+look like this:
+```c++
+#include <iostream>
+
+int main() 
+{
+    int a=0, b=12;
+    
+    if (b==11) a = 1;
+    else if (b==12) a = 2;
+    else if (b==13) a = 3;
+    else a = 4;
+    printf("%d\n",a);
+    
+    return 0;
+}
+```
+Here we had to evaluate 3 different logical expressions, whereas the switch 
+statement did that once. Whilst this example is fairly small, it is easy to see
+that we can save a lot of computing when the list of possible options grow large.

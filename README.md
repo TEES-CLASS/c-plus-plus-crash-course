@@ -9,8 +9,10 @@ Students at CLASS always end up requiring to learn C++. This here is a basic sho
  4. [Variables](chapters/c4_variables.md)
  5. [Simple mathematics](chapters/c5_simple_mathematics.md)
  6. [Functions](chapters/c6_functions.md)
- 7. [The basics of objects (`class` and `struct`)](chapters/c7_objects_class_and_struct.cc)
- 6. Work in progress
+ 7. [Conditional execution](chapters/c7_conditionals_if_switch.md)
+ 8. [Loops](chapters/c8_loops.md)
+ 8. [The basics of objects (`class` and `struct`)](chapters/cX_objects_class_and_struct.md)
+ 9. Work in progress
 
 For more in-depth learning I would refer people to the youtube channel [The Cherno](https://www.youtube.com/c/TheChernoProject), specifically his [c++ series](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb). The list of crucial videos to watch are:
  1.  [How c++ works](https://www.youtube.com/watch?v=SfGuIVzE_Os&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=5)

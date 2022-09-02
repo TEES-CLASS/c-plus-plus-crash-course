@@ -48,7 +48,7 @@ int main()
 }
 ```
 and even though it would not do anything the program would still compile and execute.  
-The first key aspect here is the definition of the `main` function. This is the entry-point for all terminal-based programs, and if one does not (at minimum) have this in one's code, it would not link into an executable. For example, let us say we wanted to name `main` something different, like `program_start`. The compiler will now have trouble compiling this file, however, the linker will tell us that the symbol `_main` is undefined. This is because it absolutely requires the function `main` to be defined, with matching case and return value of type `int`.
+The first key aspect here is the definition of the `main` function. This is the entry-point for all terminal-based programs, and if one does not (at minimum) have this in one's code, it would not link into an executable. For example, let us say we wanted to name `main` something different, like `program_start`. The compiler will not have trouble compiling this file, however, the linker will tell us that the symbol `_main` is undefined. This is because it absolutely requires the function `main` to be defined, with matching case and return value of type `int`.
 
 In conclusion, all c++ programs need a `int main()` function.
 
